@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dana';
+    direction: rtl;
+    line-height: 1.8rem;
+ 
+}
+
+ul {
+    list-style-type: none;
+}
+
+#tickersResult{
+    z-index: 999;
+}
+
+.datepicker-plot-area {
+    font-family: 'Dana';
+    font-size: 1rem;
+}
+
+
+@font-face {
+    font-family: 'Dana';
+    src: url(./fonts/Dana-Regular.ttf) format('truetype');
+}

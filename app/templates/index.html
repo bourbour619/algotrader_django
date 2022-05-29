@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="row">
+            <div class="col vh-100">
+                <div class="d-flex flex-column align-items-center justify-content-center h-75">
+                    <div>
+                        <h4 class="text-center">بازار مورد نظر جهت تحلیل را انتخاب نمایید</h4>
+                    </div>
+                    <div class="btn-group btn-group-lg mt-5" role="group">
+                        <button type="button" class="btn btn-success" onclick="location.href= `{% url 'bourse_backtest' %}`;">بازار بورس</button>
+                        <button type="button" class="btn btn-warning" onclick="location.href= `{% url 'crypto_backtest' %}`">کریپتو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}
